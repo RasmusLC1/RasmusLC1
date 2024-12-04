@@ -44,6 +44,8 @@ Fight your way through a series of random dungeons, pushing your luck to get the
 - State manager to handle game events
 - Detailed and interactive inventory system
 
+#
+
 #### **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
 ![Bachelor Screenshot](data/bachelor.png)
 Research into the effectiveness of efficient algorithmic implementation with focus on polynomial multiplication
@@ -54,6 +56,7 @@ Research into the effectiveness of efficient algorithmic implementation with foc
 - Iterative FFT algorithm implemented for 2.5 X improved performance
 - Extensive Unit testing for correctness and performance
 
+#
 
 #### **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
 ![Wolfenstein](data/wolfenstein.png)
