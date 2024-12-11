@@ -1,6 +1,6 @@
 # Welcome to my Github 👋
 
-## My name is Rasmus ladefoged. Software developer from Copenhagen, Denmark
+## My name is Rasmus. Software developer from Copenhagen, Denmark
 
 Fresh graduate with a Bachelor in Computer Science from Copenhagen University. I enjoy problem solving and learning new skills.
 
