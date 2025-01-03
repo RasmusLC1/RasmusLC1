@@ -2,9 +2,9 @@
 
 ## My name is Rasmus ladefoged. Software developer from Copenhagen, Denmark
 
-Fresh graduate with a Bachelor in Computer Science from Copenhagen University. I enjoy problem solving and learning new skills.
+Computer Science Graduate from Copenhagen University with 5 years of experience in IT. I enjoy problem solving and learning new skills.
 
-Below you can see some of my projects and skills that I have acquired working on those projects:
+Below you can see some of my projects and the technologies used to build them:
 
 ---
 ## Portfolio Website:
@@ -79,7 +79,8 @@ Research into the effectiveness of efficient algorithmic implementation with foc
 3D renderer written in Windows form .NET following the methods used to develop Wolfenstein
 
 ##### Features
-- 3D view of a 2D map
-- Basic lighting engine and enemy AI
-- 2D perspective of the map with raycaster for field of view
-- Early demo for the Dungeon Crawler game I later wrote in Python
+- 👁 3D view of a 2D map
+- 💡 Lighting engine to simulate depth
+- 🧠 Enemy AI that pathfinds to and targets the player
+- 🗺️ 2D perspective of the map with raycaster for field of view
+- 🕹 Early demo for the Dungeon Crawler game I later wrote in Python
