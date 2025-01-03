@@ -1,6 +1,6 @@
 # Welcome to my Github 👋
 
-## My name is Rasmus. Software developer from Copenhagen, Denmark
+## My name is Rasmus ladefoged. Software developer from Copenhagen, Denmark
 
 Fresh graduate with a Bachelor in Computer Science from Copenhagen University. I enjoy problem solving and learning new skills.
 
@@ -33,16 +33,32 @@ Below you can see some of my projects and skills that I have acquired working on
 
 ## Interesting Projects
 
+#### **[Recipe App](https://github.com/RasmusLC1/ecommerce-project)**  
+![Landing Page of Recipe App](data/recipe_app.png)
+Fullstack application where you can upload and search for recipes
+
+##### Features
+- Account creation and custom page showing users orders
+- Secure Payment processing through Stripe API
+- Automatic emails using Resend API
+- Backend storage in SQLite using Prisma ORM
+- Randomized product IDs for dynamic URL routing and enhanced security
+
+#
+
+
 #### **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
 ![Dungeon Game Screenshot](data/dungeongame.png)
 Fight your way through a series of random dungeons, pushing your luck to get the best treasure.
 
 ##### Features
-- Enemy AI and optimisation to support hundreds of enemies at the same time
-- Randomised Dungeon Generation using cellullar automata and custom rules
-- Dynamic lighting engine that updates the light as the player explores
-- State manager to handle game events
-- Detailed and interactive inventory system
+- 🧠 Enemy AI and optimisation to support hundreds of enemies at the same time
+- 🏰 Randomised Dungeon Generation using cellullar automata and custom rules
+- 🗺️ Spatial Hash Grid using tile memory for efficient lookups
+- 🌟 Real-time dynamic lighting engine that updates the light as the player explores
+- 🎮 State manager to handle game events
+- 🎒 Interactive inventory system to handle loot and equipment
+- ⚔️ Interactive combat and magic system using effect state management
 
 #
 
