@@ -47,9 +47,9 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 - 🔗 Dynamic URL Routing with randomized product IDs to enhance security
 
 ### Technology
-Language: TypeScript <img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-Libraries: React <img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />, Next.js <img align="left" alt="Next.js" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />, Node.js <img align="left" alt="Node.js" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-Database: SQLite (via Prisma ORM) <img align="left" alt="SQL" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+Language: TypeScript
+Libraries: React, Next.js,  Node.js 
+Database: SQLite (via Prisma ORM)
 APIs: Stripe, Resend
 
 #
@@ -68,7 +68,7 @@ This project showcases a custom-built game engine powering a procedurally genera
 - ⚔️ Combat and Magic System with state-driven effects and animations
 
 ### Technology
-- Language: Python<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
+- Language: Python
 - Algorithms: A*, Spatial Hash Grid, Custom Lighting Algorithm, Cellular Automata, Raycasting
 
 ### Performance Metrics
@@ -103,7 +103,7 @@ A 3D renderer built in C# using .NET, inspired by the original Wolfenstein 3D ga
 - 🕹 Early demo for the Dungeon Crawler game I later wrote in Python
 
 ### Technology
-- Language: C# <img align="left" alt="C#" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+- Language: C#
 
 # Contact
 Currently open to job offers, feel free to reach out if my skillset is of interest.
