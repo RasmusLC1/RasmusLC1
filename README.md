@@ -46,11 +46,11 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 - 🗄️ Database Integration with Prisma ORM and SQLite for efficient backend storage
 - 🔗 Dynamic URL Routing with randomized product IDs to enhance security
 
-### Technology
-Language: TypeScript
-Libraries: React, Next.js,  Node.js 
-Database: SQLite (via Prisma ORM)
-APIs: Stripe, Resend
+#### Technology
+- Language: TypeScript
+- Libraries: React, Next.js,  Node.js 
+- Database: SQLite (via Prisma ORM)
+- APIs: Stripe, Resend
 
 #
 
@@ -67,11 +67,11 @@ This project showcases a custom-built game engine powering a procedurally genera
 - 🎒 Interactive Inventory System for managing loot, equipment, and consumables
 - ⚔️ Combat and Magic System with state-driven effects and animations
 
-### Technology
+#### Technology
 - Language: Python
 - Algorithms: A*, Spatial Hash Grid, Custom Lighting Algorithm, Cellular Automata, Raycasting
 
-### Performance Metrics
+#### Performance Metrics
 - Stable 60 fps
 - Currently supports up to 100 enemies without noticable performance decrease
 - Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
@@ -93,6 +93,7 @@ Research into the effectiveness of efficient algorithmic implementation with foc
 
 #### **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
 ![Wolfenstein](data/wolfenstein.png)
+
 A 3D renderer built in C# using .NET, inspired by the original Wolfenstein 3D game.
 
 ##### Features
