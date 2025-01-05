@@ -1,10 +1,12 @@
 # Rasmus ladefoged - Software developer from Copenhagen, Denmark
 
-Software developer with 5 years of experience in IT and a degree in Computer Science from Copenhagen University.
+I am a Software Developer with 5 years of experience in IT from Ireland and a degree in Computer Science from Copenhagen University.
 
-I enjoy problem solving and learning new skills. I am improving my skills in full stack development by building a Next.js Webshop for recipes. I am also working on improving my programming skills through my Dungeon Crawler Game which has helped me develop my problem solving skills and writing better and more maintainable code.
+I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing and automated emails. Next I will work on secure sign in, search, user interaction and hosting.
 
-Below you can see some of my projects and the technologies used to build them:
+I am also improving my game development skills through a Dungeon Crawler Game, which has strengthened my problem-solving abilities, particularly in building efficient algorithms and writing maintainable, scalable code. Here my intial task was building an engine and now I'm working on implementing features such as intelligent enemies, combat and interactable environment pieces.
+
+Below are some of my notable projects and the technologies I’ve used to build these projects:
 
 ---
 # Portfolio Website:
