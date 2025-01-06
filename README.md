@@ -2,7 +2,7 @@
 
 I am a Software Developer with 5 years of experience in IT from Ireland and a degree in Computer Science from Copenhagen University.
 
-I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing and automated emails. Next I will work on secure sign in, search, user interaction and hosting.
+I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing, automated emails and product search. Next I will work on secure sign in, user interaction and hosting.
 
 I am also improving my game development skills through a Dungeon Crawler Game, which has strengthened my problem-solving abilities, particularly in building efficient algorithms and writing maintainable, scalable code. Here my intial task was building an engine and now I'm working on implementing features such as intelligent enemies, combat and interactable environment pieces.
 
@@ -46,6 +46,7 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 - 🗄️ Database Integration with Prisma ORM and SQLite for efficient backend storage
 - 🔗 Dynamic URL Routing with randomized product IDs to enhance security
 - 👮‍♀️ Admin Dashboard for managing users, products, and orders
+- 🔍 Product search and filtering 
 
 ### Technology
 - Language: TypeScript
