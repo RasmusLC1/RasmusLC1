@@ -40,19 +40,24 @@ Below are some of my notable projects and the technologies I’ve used to build 
 A full-stack web application for uploading, searching, and managing recipes, built with Next.js. The app delivers a seamless user experience by integrating secure payment, automated emails, and dynamic routing.
 
 ### Features
-- 👤 User Accounts with profile pages and order history
-- 💳 Secure Payment Processing using the Stripe API
-- 📧 Automated Emails for account actions and order details via the Resend API
-- 🗄️ Database Integration with Prisma ORM and SQLite for efficient backend storage
-- 🔗 Dynamic URL Routing with randomized product IDs to enhance security
-- 👮‍♀️ Admin Dashboard for managing users, products, and orders
-- 🔍 Product search and filtering 
+- 👤 **User Accounts** with profile pages and order history
+- 💳 **Secure Payment Processing** using the **Stripe API**
+- 📧 **Automated Emails** for account actions and order details via the **Resend API**
+- 📂 **Secure File Uploads** via the **EdgeStore API** with validation filters to prevent malicious content
+- 🗄️ **Database Integration** with Prisma ORM and SQLite for efficient backend storage
+- 👩‍💻 **HTML Sanitization** to prevent XSS attacks and ensure safe user input when creating their account and adding recipes
+- 🔗 **Dynamic URL Routing** with randomized product IDs to enhance security
+- 👮‍♀️ **Admin Dashboard** for managing users, products, and orders, handling user feedback, and moderating reported products
+- 🔍 **Product search** and filtering
 
 ### Technology
 - Language: TypeScript
 - Libraries: React, Next.js,  Node.js 
 - Database: SQLite (via Prisma ORM)
-- APIs: Stripe, Resend
+- APIs: Stripe, Resend, EdgeStore
+
+### Goal
+A full-stack recipe-sharing platform designed to help users upload, search, and manage personalized recipes. The app solves the problem of organizing and sharing recipes by providing a secure, user-friendly platform with powerful features for both users and administrators.
 
 #
 
@@ -61,9 +66,9 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 This project showcases a custom-built game engine powering a procedurally generated 2D dungeon crawler featuring real-time AI, dynamic lighting, and interactive gameplay mechanics.
 
 ### Features
-- 🧠 Advanced Enemy AI with optimizations to handle hundreds of enemies simultaneously
+- 🧠 Advanced Enemy AI with optimizations to handle hundreds of enemies simultaneously through efficient lookup and pathfinding algorithms, such as A* and Spatial Hash Grid and changing AI state to scale in complexity with proximity to the player
 - 🏰 Procedural Dungeon Generation using cellular automata and custom rulesets
-- 🗺️  Spatial Hash Grid for efficient collision detection and entity lookups
+- 🗺️ Spatial Hash Grid for efficient collision detection and entity lookups
 - 🌟 Real-Time Dynamic Lighting that updates as the player explores the dungeon
 - 🎮 State manager to handle game events
 - 🎒 Interactive Inventory System for managing loot, equipment, and consumables
@@ -75,9 +80,15 @@ This project showcases a custom-built game engine powering a procedurally genera
 
 ### Performance Metrics
 - Stable 60 fps
-- Currently supports up to 100 enemies without noticable performance decrease
+- Optimized for 100+ enemies without noticeable performance degradation
 - Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
 - There are no known game breaking bugs or unexpected crashes
+
+### Goal
+To create an engaging dungeon crawler with infinite replayability through procedurally generated dungeons and dynamic challenges. The game aims to provide a balance of strategy and action to keep players engaged across multiple playthroughs. The long-term objective is to publish the game on Steam, delivering a polished and optimized experience to players.
+
+### Gameplay loop
+Players enter a randomized dungeon floor, fighting enemies and managing resources to progress to the next level. Each floor increases in difficulty, requiring players to balance risk and reward. Combat is tactical, encouraging players to preserve health and manage inventory while deciding whether to engage enemies for potential rewards or avoid unnecessary danger.
 
 #
 
