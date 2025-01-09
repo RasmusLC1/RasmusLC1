@@ -66,7 +66,7 @@ A full-stack recipe-sharing platform designed to help users upload, search, and 
 This project showcases a custom-built game engine powering a procedurally generated 2D dungeon crawler featuring real-time AI, dynamic lighting, and interactive gameplay mechanics.
 
 ### Features
-- 🧠 Advanced Enemy AI with optimizations to handle hundreds of enemies simultaneously through efficient lookup and pathfinding algorithms, such as A* and Spatial Hash Grid and changing AI state to scale in complexity with proximity to the player
+- 🧠 Advanced Enemy AI optimized to handle hundreds of enemies simultaneously using efficient algorithms like A* for pathfinding and Spatial Hash Grid for fast lookups. The AI dynamically adjusts its behavior based on proximity to the player, scaling in complexity to provide more challenging encounters.
 - 🏰 Procedural Dungeon Generation using cellular automata and custom rulesets
 - 🗺️ Spatial Hash Grid for efficient collision detection and entity lookups
 - 🌟 Real-Time Dynamic Lighting that updates as the player explores the dungeon
