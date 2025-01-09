@@ -1,4 +1,4 @@
-# Rasmus ladefoged - Software developer from Copenhagen, Denmark
+# Rasmus Ladefoged - Software developer from Copenhagen, Denmark
 
 I am a Software Developer with 5 years of experience in IT from Ireland and a degree in Computer Science from Copenhagen University.
 
