@@ -4,7 +4,7 @@ I am a Software Developer with 5 years of experience in IT from Ireland and a de
 
 I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing, automated emails and product search. Next I will work on secure sign in, user interaction and hosting.
 
-I am also improving my game development skills through a Dungeon Crawler Game, which has strengthened my problem-solving abilities, particularly in building efficient algorithms and writing maintainable, scalable code. Here my intial task was building an engine and now I'm working on implementing features such as intelligent enemies, combat and interactable environment pieces.
+Alongside web development, I'm working on a 2D Dungeon Crawler Game, enhancing my algorithmic thinking and ability to write clean, scalable and maintainable code. From building the game engine to implementing features like AI, combat, and interactable environments, this project has significantly sharpened my problem-solving skills.
 
 Below are some of my notable projects and the technologies I’ve used to build these projects:
 
