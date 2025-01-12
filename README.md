@@ -2,7 +2,7 @@
 
 I am a Software Developer with 5 years of experience in IT from Ireland and a degree in Computer Science from Copenhagen University.
 
-I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing, automated emails and product search. Next I will work on secure sign in, user interaction and hosting.
+I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing, secure sign-in, automated emails and product search. Next I will work on user interaction and hosting.
 
 Alongside web development, I'm working on a 2D Dungeon Crawler Game, enhancing my algorithmic thinking and ability to write clean, scalable and maintainable code. From building the game engine to implementing features like AI, combat, and interactable environments, this project has significantly sharpened my problem-solving skills.
 
@@ -35,13 +35,14 @@ Below are some of my notable projects and the technologies I’ve used to build 
 
 # Interesting Projects
 
-### **[Recipe App](https://github.com/RasmusLC1/Recipe-App)**  
+##💻 **[Recipe App](https://github.com/RasmusLC1/Recipe-App)**  
 ![Landing Page of Recipe App](data/recipe_app.png)
 A full-stack web application for uploading, searching, and managing recipes, built with Next.js. The app delivers a seamless user experience by integrating secure payment, automated emails, and dynamic routing.
 
 ### Features
 - 👤 **User Accounts** with profile pages and order history
 - 💳 **Secure Payment Processing** using the **Stripe API**
+- 🔒 **Secure Sign-In** and authorization with **Next-Auth**
 - 📧 **Automated Emails** for account actions and order details via the **Resend API**
 - 📂 **Secure File Uploads** via the **EdgeStore API** with validation filters to prevent malicious content
 - 🗄️ **Database Integration** with Prisma ORM and SQLite for efficient backend storage
@@ -51,17 +52,19 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 - 🔍 **Product search** and filtering
 
 ### Technology
-- Language: TypeScript
-- Libraries: React, Next.js,  Node.js 
-- Database: SQLite (via Prisma ORM)
-- APIs: Stripe, Resend, EdgeStore
+- **Language:** TypeScript
+- **Frontend:** React, Next.js
+- **Backend:** Node.js, NextAuth.js
+- **Database:** SQLite (via Prisma ORM)
+- **APIs:** Stripe, Resend, EdgeStore
+- **Security:** HTML Sanitization
 
 ### Goal
 A full-stack recipe-sharing platform designed to help users upload, search, and manage personalized recipes. The app solves the problem of organizing and sharing recipes by providing a secure, user-friendly platform with powerful features for both users and administrators.
 
 #
 
-## **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
+##🕹 **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
 ![Dungeon Game Screenshot](data/dungeongame.png)
 This project showcases a custom-built game engine powering a procedurally generated 2D dungeon crawler featuring real-time AI, dynamic lighting, and interactive gameplay mechanics.
 
@@ -83,16 +86,10 @@ This project showcases a custom-built game engine powering a procedurally genera
 - Optimized for 100+ enemies without noticeable performance degradation
 - Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
 - There are no known game breaking bugs or unexpected crashes
-
-### Goal
-To create an engaging dungeon crawler with infinite replayability through procedurally generated dungeons and dynamic challenges. The game aims to provide a balance of strategy and action to keep players engaged across multiple playthroughs. The long-term objective is to publish the game on Steam, delivering a polished and optimized experience to players.
-
-### Gameplay loop
-Players enter a randomized dungeon floor, fighting enemies and managing resources to progress to the next level. Each floor increases in difficulty, requiring players to balance risk and reward. Combat is tactical, encouraging players to preserve health and manage inventory while deciding whether to engage enemies for potential rewards or avoid unnecessary danger.
-
+  
 #
 
-## **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
+##🧮 **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
 ![Bachelor Screenshot](data/bachelor.png)
 Research into the effectiveness of efficient algorithmic implementation with focus on polynomial multiplication
 
@@ -104,7 +101,7 @@ Research into the effectiveness of efficient algorithmic implementation with foc
 
 #
 
-## **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
+##🕹 **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
 ![Wolfenstein](data/wolfenstein.png)
 
 A 3D renderer built in C# using .NET, inspired by the original Wolfenstein 3D game.
