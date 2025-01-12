@@ -35,7 +35,7 @@ Below are some of my notable projects and the technologies I’ve used to build 
 
 # Interesting Projects
 
-##💻 **[Recipe App](https://github.com/RasmusLC1/Recipe-App)**  
+## 💻 **[Recipe App](https://github.com/RasmusLC1/Recipe-App)**  
 ![Landing Page of Recipe App](data/recipe_app.png)
 A full-stack web application for uploading, searching, and managing recipes, built with Next.js. The app delivers a seamless user experience by integrating secure payment, automated emails, and dynamic routing.
 
@@ -64,7 +64,7 @@ A full-stack recipe-sharing platform designed to help users upload, search, and 
 
 #
 
-##🕹 **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
+## 🕹 **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
 ![Dungeon Game Screenshot](data/dungeongame.png)
 This project showcases a custom-built game engine powering a procedurally generated 2D dungeon crawler featuring real-time AI, dynamic lighting, and interactive gameplay mechanics.
 
@@ -89,7 +89,7 @@ This project showcases a custom-built game engine powering a procedurally genera
   
 #
 
-##🧮 **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
+## 🧮 **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
 ![Bachelor Screenshot](data/bachelor.png)
 Research into the effectiveness of efficient algorithmic implementation with focus on polynomial multiplication
 
@@ -101,7 +101,7 @@ Research into the effectiveness of efficient algorithmic implementation with foc
 
 #
 
-##🕹 **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
+## 🕹 **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)**  
 ![Wolfenstein](data/wolfenstein.png)
 
 A 3D renderer built in C# using .NET, inspired by the original Wolfenstein 3D game.
