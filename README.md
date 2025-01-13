@@ -55,10 +55,10 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 ### Technology
 - **Language:** TypeScript
 - **Frontend:** React, Next.js
-- **Backend:** Node.js, NextAuth.js
+- **Backend:** Node.js, NextAuth
 - **Database:** SQLite (via Prisma ORM)
 - **APIs:** Stripe, Resend, EdgeStore
-- **Security:** HTML Sanitization
+- **Security:** HTML Sanitization, bcrypt, Zod
 
 ### Goal
 A full-stack recipe-sharing platform designed to help users upload, search, and manage personalized recipes. The app solves the problem of organizing and sharing recipes by providing a secure, user-friendly platform with powerful features for both users and administrators.
