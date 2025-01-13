@@ -42,7 +42,8 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 ### Features
 - 👤 **User Accounts** with profile pages and order history
 - 💳 **Secure Payment Processing** using the **Stripe API**
-- 🔒 **Secure Sign-In** and authorization with **Next-Auth**
+- 🔒 **Secure Sign-In** and authorization with **Next-Auth** and **bcrypt** for encryption
+- 🔐 **Password Reset Emails** with secure, time-limited dynamic links and encrypted password updates via the **Resend API**
 - 📧 **Automated Emails** for account actions and order details via the **Resend API**
 - 📂 **Secure File Uploads** via the **EdgeStore API** with validation filters to prevent malicious content
 - 🗄️ **Database Integration** with Prisma ORM and SQLite for efficient backend storage
