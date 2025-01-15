@@ -38,6 +38,10 @@ Below are some of my notable projects and the technologies I’ve used to build 
 
 ## 💻 **[Bookstore Webshop](https://github.com/RasmusLC1/Booky)**  
 ![Booky product page](data/bookstore.png)
+
+### Link
+https://booky-mu.vercel.app/
+
 A full-stack web application for buying, uploading, searching, and managing books, built with Next.js. The platform offers a seamless user experience through secure payments, user accounts, automated emails, dynamic routing, and more.
 
 ### Features
