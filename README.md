@@ -2,15 +2,16 @@
 
 I am a Software Developer with 5 years of experience in IT from Ireland and a degree in Computer Science from Copenhagen University.
 
-I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for managing recipes, incorporating features like secure payments, dynamic routing, secure sign-in, automated emails and product search. Next I will work on user interaction and hosting.
+I love problem-solving and learning new skills. Currently, I am focusing on full-stack development by building a Next.js Webshop for books, incorporating features like secure payments, dynamic routing, secure sign-in, automated emails, product search, database hosting and many more things. It is still under development and continually updated.
 
 Alongside web development, I'm working on a 2D Dungeon Crawler Game, enhancing my algorithmic thinking and ability to write clean, scalable and maintainable code. From building the game engine to implementing features like AI, combat, and interactable environments, this project has significantly sharpened my problem-solving skills.
 
 Below are some of my notable projects and the technologies I’ve used to build these projects:
 
 ---
-# Portfolio Website:
-**[Check out my portfolio website!](https://rasmuslc1.github.io/portfolio_website/#)**  
+# Websites:
+**[Interactive Book Store!](https://booky-mu.vercel.app/)**  
+**[Portfolio Website!](https://rasmuslc1.github.io/portfolio_website/#)**  
 
 #
 ## 🧰 Languages and Tools
@@ -35,9 +36,9 @@ Below are some of my notable projects and the technologies I’ve used to build 
 
 # Interesting Projects
 
-## 💻 **[Recipe App](https://github.com/RasmusLC1/Recipe-App)**  
-![Landing Page of Recipe App](data/recipe_app.png)
-A full-stack web application for uploading, searching, and managing recipes, built with Next.js. The app delivers a seamless user experience by integrating secure payment, automated emails, and dynamic routing.
+## 💻 **[Bookstore Webshop](https://github.com/RasmusLC1/Booky)**  
+![Booky product page](data/bookstore.png)
+A full-stack web application for buying, uploading, searching, and managing books, built with Next.js. The platform offers a seamless user experience through secure payments, user accounts, automated emails, dynamic routing, and more.
 
 ### Features
 - 👤 **User Accounts** with profile pages and order history
@@ -51,18 +52,21 @@ A full-stack web application for uploading, searching, and managing recipes, bui
 - 🔗 **Dynamic URL Routing** with randomized product IDs to enhance security
 - 👮‍♀️ **Admin Dashboard** for managing users, products, and orders, handling user feedback, and moderating reported products
 - 🔍 **Product search** and filtering
+- ☁ **Database Hosting** using **Supabase** for scalable and reliable backend services
+- 🌐 **Website Hosting** using **Vercel** for fast, secure, and continuous deployment.
+
 
 ### Technology
 - **Language:** TypeScript
 - **Frontend:** React, Next.js
 - **Backend:** Node.js, NextAuth
-- **Database:** SQLite (via Prisma ORM)
+- **Database:** Supabase (via Prisma ORM)
 - **APIs:** Stripe, Resend, EdgeStore
 - **Security:** HTML Sanitization, bcrypt, Zod
+- **Hosting**: Vercel
 
 ### Goal
-A full-stack recipe-sharing platform designed to help users upload, search, and manage personalized recipes. The app solves the problem of organizing and sharing recipes by providing a secure, user-friendly platform with powerful features for both users and administrators.
-
+Booky is a full-stack bookstore platform that enables users to upload, manage, and self-publish their books securely and efficiently. The platform offers a user-friendly solution for organizing and sharing books, with robust features for both end-users and administrators.
 #
 
 ## 🕹 **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
