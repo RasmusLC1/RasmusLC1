@@ -125,9 +125,4 @@ A 3D renderer built in C# using .NET, inspired by the original Wolfenstein 3D ga
 ### Technology
 - Language: C#
 
-# Contact
-Currently open to job offers, feel free to reach out if my skillset is of interest.
-
-Email: rasmus.lc3@gmail.com
-
 
