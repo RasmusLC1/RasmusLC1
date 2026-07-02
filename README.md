@@ -9,6 +9,39 @@ Alongside web development, I'm working on a 2D Dungeon Crawler Game, enhancing m
 Below are some of my notable projects and the technologies I’ve used to build these projects:
 
 ---
+**Dungeon Crawler Game**
+
+A custom-built game engine powering a procedurally generated 2D dungeon crawler with real-time AI, dynamic lighting, and a full loot and progression system. Built entirely from scratch in Python without a commercial game engine to progress my skills as a software developer and architect.
+
+**Features**
+
+- Advanced enemy AI supporting 100+ simultaneous enemies, using A* pathfinding, spatial partitioning, and a load-balanced request queue that distributes pathfinding calculations across frames to prevent frame stutter
+- Procedural dungeon generation using cellular automata, producing natural cave layouts with placed rooms, loot, traps, and boss arenas each run
+- Dynamic AI Director ("The Awakening") that escalates difficulty in real time based on player noise and area density — spawning enemies, buffing them, locking doors, and replacing chests with mimics
+- Real-time raycasting lighting system with additive light contributions per tile and fog-of-war exploration using Pre-computed ray vectors for performance
+- Full inventory system supporting weapons, runes, consumables, and stackable loot with automatic merging
+- Tile grid system acting as a centralised spatial knowledge hub — each tile caches its neighbours, physics boundaries, light contributions, and entity occupants, allowing enemies, items, and the raycaster to query local world state in O(1) rather than scanning the full map
+- Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or amplifying incoming damage
+- - Automated test suite covering core engine systems including AI pathfinding, tilemap logic, status effects, raycasting, and procedural generation, written with pytest and unittest.mock
+
+**Technology**
+
+- Language: Python / Pygame
+- Algorithms: A*, Cellular Automata, Raycasting, Squared Distance Spatial Partitioning
+- Patterns: Component composition, lazy instantiation, load-balanced queues, data-driven spawning factories
+
+### Performance Metrics
+- Stable 60 fps
+- Optimized for 100+ enemies without noticeable performance degradation
+- Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
+- There are no known game breaking bugs or unexpected crashes
+
+### Development Notes
+
+This project has been in active development for two years alongside university and work. Earlier systems (inventory, weapons) reflect where my skills were at the start of the project and are due for a refactor. Newer systems (AI, lighting, effects, tile architecture) reflect more current design thinking and are where I'd point for code quality. The git history shows the progression of myself as a developer.
+
+
+---
 # Websites:
 **[Interactive Book Store!](https://booky-mu.vercel.app/)**  
 **[Portfolio Website!](https://rasmuslc1.github.io/portfolio_website/#)**  
@@ -72,37 +105,6 @@ https://booky-mu.vercel.app/
 ### Goal
 Booky is a full-stack bookstore platform that enables users to upload, manage, and self-publish their books securely and efficiently. The platform offers a user-friendly solution for organizing and sharing books, with robust features for both end-users and administrators.
 #
-
-**Dungeon Crawler Game**
-
-A custom-built game engine powering a procedurally generated 2D dungeon crawler with real-time AI, dynamic lighting, and a full loot and progression system. Built entirely from scratch in Python without a commercial game engine.
-
-**Features**
-
-- Advanced enemy AI supporting 100+ simultaneous enemies, using A* pathfinding, spatial partitioning, and a load-balanced request queue that distributes pathfinding calculations across frames to prevent frame stutter
-- Procedural dungeon generation using cellular automata, producing natural cave layouts with placed rooms, loot, traps, and boss arenas each run
-- Dynamic AI Director ("The Awakening") that escalates difficulty in real time based on player noise and area density — spawning enemies, buffing them, locking doors, and replacing chests with mimics
-- Real-time raycasting lighting system with additive light contributions per tile and fog-of-war exploration using Pre-computed ray vectors for performance
-- Full inventory system supporting weapons, runes, consumables, and stackable loot with automatic merging
-- Tile grid system acting as a centralised spatial knowledge hub — each tile caches its neighbours, physics boundaries, light contributions, and entity occupants, allowing enemies, items, and the raycaster to query local world state in O(1) rather than scanning the full map
-- Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or amplifying incoming damage
-- - Automated test suite covering core engine systems including AI pathfinding, tilemap logic, status effects, raycasting, and procedural generation, written with pytest and unittest.mock
-
-**Technology**
-
-- Language: Python / Pygame
-- Algorithms: A*, Cellular Automata, Raycasting, Squared Distance Spatial Partitioning
-- Patterns: Component composition, lazy instantiation, load-balanced queues, data-driven spawning factories
-
-### Performance Metrics
-- Stable 60 fps
-- Optimized for 100+ enemies without noticeable performance degradation
-- Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
-- There are no known game breaking bugs or unexpected crashes
-
-### Development Notes
-
-This project has been in active development for two years alongside university and work. Earlier systems (inventory, weapons) reflect where my skills were at the start of the project and are due for a refactor. Newer systems (AI, lighting, effects, tile architecture) reflect more current design thinking and are where I'd point for code quality. The git history shows the progression of myself as a developer.
 
 #
 
