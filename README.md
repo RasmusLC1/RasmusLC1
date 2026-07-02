@@ -73,22 +73,24 @@ https://booky-mu.vercel.app/
 Booky is a full-stack bookstore platform that enables users to upload, manage, and self-publish their books securely and efficiently. The platform offers a user-friendly solution for organizing and sharing books, with robust features for both end-users and administrators.
 #
 
-## 🕹 **[Dungeon Crawler Game](https://github.com/RasmusLC1/Dungeon-Crawler)**  
-![Dungeon Game Screenshot](data/dungeongame.png)
-This project showcases a custom-built game engine powering a procedurally generated 2D dungeon crawler featuring real-time AI, dynamic lighting, and interactive gameplay mechanics.
+**Dungeon Crawler Game**
 
-### Features
-- 🧠 Advanced Enemy AI optimized to handle hundreds of enemies simultaneously using A* for pathfinding and Spatial Hash Grid for fast lookups. The AI dynamically scales its decision-making by checking fewer parameters when enemies are far from the player, minimizing computational overhead.
-- 🏰 Procedural Dungeon Generation using cellular automata and custom rulesets
-- 🗺️ Spatial Hash Grid for efficient collision detection and entity lookups
-- 🌟 Real-Time Dynamic Lighting that updates as the player explores the dungeon
-- 🎮 State manager to handle game events
-- 🎒 Interactive Inventory System for managing loot, equipment, and consumables
-- ⚔️ Combat and Magic System with state-driven effects and animations
+A custom-built game engine powering a procedurally generated 2D dungeon crawler with real-time AI, dynamic lighting, and a full loot and progression system. Built entirely from scratch in Python without a commercial game engine.
 
-### Technology
-- Language: Python
-- Algorithms: A*, Spatial Hash Grid, Custom Lighting Algorithm, Cellular Automata, Raycasting
+**Features**
+
+- Advanced enemy AI supporting 100+ simultaneous enemies, using A* pathfinding, spatial partitioning, and a load-balanced request queue that distributes pathfinding calculations across frames to maintain stable 60fps
+- Procedural dungeon generation using cellular automata, producing natural cave layouts with placed rooms, loot, traps, and boss arenas each run
+- Dynamic AI Director ("The Awakening") that escalates difficulty in real time based on player noise and area density — spawning enemies, buffing them, locking doors, and replacing chests with mimics
+- Real-time raycasting lighting system with additive light contributions per tile and fog-of-war exploration
+- Full inventory system supporting weapons, runes, consumables, and stackable loot with automatic merging
+- Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or poison reducing strength.
+
+**Technology**
+
+- Language: Python / Pygame
+- Algorithms: A*, Cellular Automata, Raycasting, Squared Distance Spatial Partitioning
+- Patterns: Component composition, lazy instantiation, load-balanced queues, data-driven spawning factories
 
 ### Performance Metrics
 - Stable 60 fps
