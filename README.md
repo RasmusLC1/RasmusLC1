@@ -98,7 +98,11 @@ A custom-built game engine powering a procedurally generated 2D dungeon crawler 
 - Optimized for 100+ enemies without noticeable performance degradation
 - Map size is limited to 120 X 120 for gameplay, but can be increased to 500X500 without performance decrease
 - There are no known game breaking bugs or unexpected crashes
-  
+
+### Development Notes
+
+This project has been in active development for two years alongside university and work. Earlier systems (inventory, weapons) reflect where my skills were at the start of the project and are due for a refactor. Newer systems (AI, lighting, effects, tile architecture) reflect more current design thinking and are where I'd point for code quality. The git history shows the progression of myself as a developer.
+
 #
 
 ## 🧮 **[Bachelor Project in Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)**  
