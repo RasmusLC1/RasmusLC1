@@ -79,12 +79,13 @@ A custom-built game engine powering a procedurally generated 2D dungeon crawler 
 
 **Features**
 
-- Advanced enemy AI supporting 100+ simultaneous enemies, using A* pathfinding, spatial partitioning, and a load-balanced request queue that distributes pathfinding calculations across frames to maintain stable 60fps
+- Advanced enemy AI supporting 100+ simultaneous enemies, using A* pathfinding, spatial partitioning, and a load-balanced request queue that distributes pathfinding calculations across frames to prevent frame stutter
 - Procedural dungeon generation using cellular automata, producing natural cave layouts with placed rooms, loot, traps, and boss arenas each run
 - Dynamic AI Director ("The Awakening") that escalates difficulty in real time based on player noise and area density — spawning enemies, buffing them, locking doors, and replacing chests with mimics
-- Real-time raycasting lighting system with additive light contributions per tile and fog-of-war exploration
+- Real-time raycasting lighting system with additive light contributions per tile and fog-of-war exploration using Pre-computed ray vectors for performance
 - Full inventory system supporting weapons, runes, consumables, and stackable loot with automatic merging
-- Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or poison reducing strength.
+- Tile grid system acting as a centralised spatial knowledge hub — each tile caches its neighbours, physics boundaries, light contributions, and entity occupants, allowing enemies, items, and the raycaster to query local world state in O(1) rather than scanning the full map
+- Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or amplifying incoming damage
 
 **Technology**
 
