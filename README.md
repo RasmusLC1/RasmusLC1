@@ -86,6 +86,7 @@ A custom-built game engine powering a procedurally generated 2D dungeon crawler 
 - Full inventory system supporting weapons, runes, consumables, and stackable loot with automatic merging
 - Tile grid system acting as a centralised spatial knowledge hub — each tile caches its neighbours, physics boundaries, light contributions, and entity occupants, allowing enemies, items, and the raycaster to query local world state in O(1) rather than scanning the full map
 - Status effect system with 20+ interactive effects including fire, poison, frozen, electric, and vampiric — with cross-effect interactions such as fire being cancelled by wet or amplifying incoming damage
+- - Automated test suite covering core engine systems including AI pathfinding, tilemap logic, status effects, raycasting, and procedural generation, written with pytest and unittest.mock
 
 **Technology**
 
