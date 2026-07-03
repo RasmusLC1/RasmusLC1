@@ -1,6 +1,6 @@
 # Rasmus Ladefoged — Software Developer from Copenhagen, Denmark
 
-I am a Software Developer with 5 years of professional IT experience and a Computer Science degree from Copenhagen University. 
+I am a Software Developer with 1 year as a software developer for Netcompany and 5 years of professional IT experience in Ireland working with enterprise support for Apple, servers for Microsoft and Q/A testing for Google and a Computer Science degree from Copenhagen University. 
 
 I thrive on solving complex architectural problems, optimizing performance, and building clean, maintainable systems. Currently, my engineering focus is split between modern full-stack web architectures and performance-critical systems development.
 
@@ -19,7 +19,9 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 * **Load-Balanced AI:** Supports 100+ simultaneous enemies utilizing $A^*$ pathfinding coupled with a frame-distributed request queue to eliminate frame stuttering while maintaining 60+ FPS.
 * **Spatial Knowledge Hub:** Designed a centralized tile grid system where tiles cache local boundaries and entities, dropping situational queries down to $O(1)$ complexity.
 * **Dynamic AI Director:** Features a systemic difficulty engine ("The Awakening") that monitors player noise and environmental density to dynamically manipulate spawns and traps.
-* **Automated Testing:** Backed by an automated test suite leveraging `pytest` and mock architectures covering pathfinding and procedural map generation.
+* **Raycasting & Lighting:** Implements a 360° raycasting system for fog-of-war exploration with additive per-source tile lighting, pre-computed ray vectors, and cached tile surfaces to minimise redraws.
+* **Automated Testing:** Backed by a pytest suite covering core engine systems including AI pathfinding, tilemap spatial queries, raycasting, status effect interactions, and procedural generation pipelines, using mock architectures to isolate components without requiring a live game instance.
+* **Developer Note:** Active development since August 2024 — the git history reflects two years of continuous architectural improvement. Newer systems (enemy AI, lighting, tiles, effects) represent my current design thinking; older systems (inventory, weapons) are due for refactoring and show where the project started.
 
 ---
 
@@ -45,7 +47,7 @@ Academic research analyzing the real-world efficiency of advanced algebraic algo
 
 ### 🕹 **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)** — *C#, .NET*
 <img src="data/wolfenstein.png" alt="Wolfenstein" height="250" />
-A retro-inspired 3D raycaster projecting a 2D map matrix into a simulated 3D space, featuring localized lighting depth and enemy tracking logic.
+* **3D Wolfenstein Renderer** — *C#, .NET* — A retro raycaster built in 2023 as the technical predecessor to Kobold Clash. Implemented A* pathfinding, raycasting-based fog of war, and a shooting system. The architectural limitations of this project directly influenced the choice of component-based design of Kobold Clash.
 
 ---
 
