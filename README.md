@@ -1,6 +1,9 @@
 # Rasmus Ladefoged — Software Developer from Copenhagen, Denmark
 
-I am a Software Developer with 1 year as a software developer for Netcompany and 5 years of professional IT experience in Ireland working with enterprise support for Apple, servers for Microsoft and Q/A testing for Google and a Computer Science degree from Copenhagen University. 
+I am a Software Developer with a Computer Science degree from Copenhagen University, a year of commercial development experience at Netcompany, and 5 years of professional enterprise IT experience in Ireland, where I worked with:
+* **QA testing** for Google
+* **Systems infrastructure** for Microsoft
+* **Enterprise support** for Apple
 
 I thrive on solving complex architectural problems, optimizing performance, and building clean, maintainable systems. Currently, my engineering focus is split between modern full-stack web architectures and performance-critical systems development.
 
@@ -47,7 +50,10 @@ Academic research analyzing the real-world efficiency of advanced algebraic algo
 
 ### 🕹 **[3D Wolfenstein Renderer](https://github.com/RasmusLC1/Wolfenstein-Renderer)** — *C#, .NET*
 <img src="data/wolfenstein.png" alt="Wolfenstein" height="250" />
-* **3D Wolfenstein Renderer** — *C#, .NET* — A retro raycaster built in 2023 as the technical predecessor to Kobold Clash. Implemented A* pathfinding, raycasting-based fog of war, and a shooting system. The architectural limitations of this project directly influenced the choice of component-based design of Kobold Clash.
+* **3D Wolfenstein Renderer** — *C#, .NET* — A retro raycaster built in 2023 as the technical predecessor to *Kobold Clash*. 
+
+* **Features:** Implemented $A^*$ pathfinding, raycasting-based fog of war, and a real-time ray-traced shooting system.
+* **Architectural Takeaway:** The structural and scaling limitations encountered during this project directly influenced the decision to switch to a strict component-based architecture for *Kobold Clash*.
 
 ---
 
