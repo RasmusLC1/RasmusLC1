@@ -41,10 +41,12 @@ A full-stack, self-publishing platform built to simulate a high-traffic e-commer
 
 ### 🧮 **[Bachelor Project: Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)** — *Algorithmic Optimization*
 <img src="data/bachelor.png" alt="Bachelor Screenshot" height="250" />
-Academic research analyzing the real-world efficiency of advanced algebraic algorithms.
+Academic research benchmarking five polynomial multiplication algorithms implemented from scratch in C using GMP for arbitrary-precision arithmetic.
 
-* Achieved a **14x performance improvement** by optimizing Karatsuba's multiplication algorithm.
-* Refactored a recursive Fast Fourier Transform (FFT) into an iterative layout, resulting in a **2.5x speedup**.
+* **Algorithms implemented:** Naïve O(n²), DFT, recursive FFT, iterative FFT, and Karatsuba — each with a full forward/inverse transform pipeline and a systematic runtime test harness for direct comparison across input sizes.
+* **14x improvement on Karatsuba:** Tuned the base-case threshold through empirical benchmarking to find the crossover point where schoolbook 
+  multiplication outperforms the recursive overhead, reducing runtime by 14x over the unoptimised implementation.
+* **2.5x improvement on FFT:** Refactored the recursive FFT into an iterative layout using bit-reversal permutation and a single upfront memory allocation passed through the call stack, eliminating per-call malloc overhead and improving cache locality.
 
 ---
 
