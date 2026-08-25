@@ -17,7 +17,8 @@ Below are some of my notable projects, followed by the toolset I use to build th
 ---
 
 ### ⚔️ **[Custom 2D Dungeon Crawler Engine (Kobold Clash)](https://github.com/RasmusLC1/Kobold_Clash/)** — *Python, Pygame*
-<img src="data/kobold.gif" alt="Kobold Clash" width="50%" />
+<img src="data/kobold.gif" alt="Kobold Clash" width="50%" /><img width="50%" height="625" alt="image" src="https://github.com/user-attachments/assets/efa3c303-a95f-418f-a10c-78a30904edcb" />
+
 
 A custom-built game engine powering a procedurally generated 2D world with real-time AI, dynamic lighting, and zero external engine dependencies.
 * **Load-Balanced AI:** Supports 100+ simultaneous enemies utilizing $A^*$ pathfinding coupled with a frame-distributed request queue to eliminate frame stuttering while maintaining 60+ FPS.
