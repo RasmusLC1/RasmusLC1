@@ -29,7 +29,8 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 
 ---
 ### 🏝️ **[Procedural Town Simulator (Towns-End)](https://github.com/RasmusLC1/townsend/)** — *Godot 4, C#*
-<img src="data/townsend.gif" alt="Towns-End" width="50%" />
+<img width="50%" height="640" alt="image" src="https://github.com/user-attachments/assets/eb1a2909-d6ca-49c6-8fd7-a59e581b69b8" />
+
 
 A procedurally generated 3D island town-builder built on Godot's GridMap, combining custom terrain generation, coastline-aware biome placement, and a fully decoupled tool-based editing system.
 * **Procedural Terrain Generation:** Layered simplex noise combined with a radial falloff mask carves a bounded island silhouette; a dual-cache system (full-column data for cliffs/caves, a dedicated surface-tile index for everything else) keeps ground lookups at $O(1)$ instead of scanning every buried layer.
