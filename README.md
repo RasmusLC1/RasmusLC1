@@ -47,7 +47,7 @@ Full-stack investment screening and backtesting application that scores companie
 - **Capital-Intensive Calibration:** Adjusts financial health scaling—such as cash buffer thresholds—to account for capital-intensive business models without issuing false penalties.
 - **SQLite Caching & Performance:** Uses a local SQLite database (`stock_summaries.db`) to cache fetched financial summaries, reducing redundant external API calls and speeding up repeated screening and backtest runs.
 - **Testing & Backtesting:** Backed by unit-tested scoring logic and backtesting scripts that correlate historical scores with subsequent performance, compute multi-year CAGR metrics, and export portfolio valuations to CSV.
-- 
+
 ---
 ### 🏝️ **[Procedural Town Simulator (Towns-End)](https://github.com/RasmusLC1/townsend/)** — *Godot 4, C#*
 <img width="50%" height="640" alt="image" src="https://github.com/user-attachments/assets/eb1a2909-d6ca-49c6-8fd7-a59e581b69b8" /><img width="50%" height="625" alt="image" src="https://github.com/user-attachments/assets/efa3c303-a95f-418f-a10c-78a30904edcb" />
