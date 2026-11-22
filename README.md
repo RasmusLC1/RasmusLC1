@@ -38,16 +38,16 @@ A full-stack online bookstore with a custom **ASP.NET Core Web API** backend, mi
 * **Delivery:** Frontend on Vercel, with tests and a GitHub Actions pipeline.
 
 ---
-### 📈 **[Global Stock Screener & Quantitative Backtesting Engine](https://github.com/RasmusLC1/stock_analysis)** — *Python, Pandas, yfinance, SQLite*
-<img src="data/screener.png" alt="Stock Screener" height="250" />
+### 📈 **[Stock Analysis Tool](https://github.com/RasmusLC1/stock_analysis)** — *Python, TypeScript, React, Vite, SQLite*
+<img src="data/screener.png" alt="Stock Analysis Tool" height="250" />
 
-A high-performance quantitative backtesting and screening engine designed to evaluate a global universe (~200+ tickers) across multiple fundamental dimensions to identify secular compounders while filtering out cyclical value traps.
-* **Multi-Lens Scoring Architecture:** Deconstructs companies into thematic modular lenses (**Growth, Quality, Health, Value, GARP, and Scale Disruptor**) using standardized `yfinance` data normalization, turning raw metrics into a weighted $0–100$ composite score.
-* **Capital-Intensive Calibration:** Fine-tuned financial health metrics—such as adjusting cash buffer scaling to accommodate asset-heavy industrial, pharmaceutical, and compounder business models without issuing false penalties.
-* **SQLite Data Caching:** Implements a local relational caching layer (`stock_summaries.db`) to persist fetched financial summaries and accelerate subsequent screening runs without repeatedly hitting external APIs.
-* **Rigorous Backtesting Suite:** Features dedicated testing and backtesting scripts that correlate historical model scores with future performance, compute multi-year CAGR metrics, and export historical portfolio valuations to CSV for strategy validation.
-* **Interactive Desktop Interface:** Includes a native desktop GUI (`src/gui/`) for visual inspection, card views, and interactive filtering of top-tier global equity candidates.
-
+Full-stack investment screening and backtesting application that scores companies (~200+ tickers) across fundamental dimensions from financial data to surface compounders and filter out cyclical value traps.
+- **Architecture:** React/TypeScript (Vite) frontend paired with a Python REST backend, separating data retrieval, SQLite caching, metric calculations, and multi-lens scoring into modular components.
+- **Multi-Lens Scoring:** Evaluates companies across thematic lenses (**Growth, Quality, Health, Value, GARP, and Scale Disruptor**) using normalized financial data to produce a weighted 0–100 composite score.
+- **Capital-Intensive Calibration:** Adjusts financial health scaling—such as cash buffer thresholds—to account for capital-intensive business models without issuing false penalties.
+- **SQLite Caching & Performance:** Uses a local SQLite database (`stock_summaries.db`) to cache fetched financial summaries, reducing redundant external API calls and speeding up repeated screening and backtest runs.
+- **Testing & Backtesting:** Backed by unit-tested scoring logic and backtesting scripts that correlate historical scores with subsequent performance, compute multi-year CAGR metrics, and export portfolio valuations to CSV.
+- 
 ---
 ### 🏝️ **[Procedural Town Simulator (Towns-End)](https://github.com/RasmusLC1/townsend/)** — *Godot 4, C#*
 <img width="50%" height="640" alt="image" src="https://github.com/user-attachments/assets/eb1a2909-d6ca-49c6-8fd7-a59e581b69b8" /><img width="50%" height="625" alt="image" src="https://github.com/user-attachments/assets/efa3c303-a95f-418f-a10c-78a30904edcb" />
