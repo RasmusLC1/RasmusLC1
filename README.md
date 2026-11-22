@@ -28,7 +28,7 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 
 ---
 ### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)**: *C#, ASP.NET Core, EF Core, SQLite, TypeScript, Next.js*
-<img src="data/bookstore.png" alt="Booky product page" height="250" />
+<img src="data/bookstore.png" alt="Booky product page" height="400" />
 
 A full-stack online bookstore with a custom **ASP.NET Core Web API** backend, migrated from a Next.js/Prisma implementation while keeping the existing frontend working throughout.
 
@@ -39,7 +39,7 @@ A full-stack online bookstore with a custom **ASP.NET Core Web API** backend, mi
 
 ---
 ### 📈 **[Stock Analysis Tool](https://github.com/RasmusLC1/stock_analysis)** — *Python, TypeScript, React, Vite, SQLite*
-<img src="data/screener.png" alt="Stock Analysis Tool" height="250" />
+<img width="50%" height="1549" alt="billede" src="https://github.com/user-attachments/assets/aef173c4-99c6-4a5f-983a-65b5e959fcfa" /><img width="50%" height="1549" alt="billede" src="https://github.com/user-attachments/assets/7fb86cb1-92ef-4b47-af2b-6b7c5edff2a3" />
 
 Full-stack investment screening and backtesting application that scores companies (~200+ tickers) across fundamental dimensions from financial data to surface compounders and filter out cyclical value traps.
 - **Architecture:** React/TypeScript (Vite) frontend paired with a Python REST backend, separating data retrieval, SQLite caching, metric calculations, and multi-lens scoring into modular components.
