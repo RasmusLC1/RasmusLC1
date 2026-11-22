@@ -25,7 +25,6 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 * **Dynamic AI Director:** Features a systemic difficulty engine ("The Awakening") that monitors player noise and environmental density to dynamically manipulate spawns and traps.
 * **Raycasting & Lighting:** Implements a 360° raycasting system for fog-of-war exploration with additive per-source tile lighting, pre-computed ray vectors, and cached tile surfaces to minimise redraws.
 * **Automated Testing:** Backed by a pytest suite covering core engine systems including AI pathfinding, tilemap spatial queries, raycasting, status effect interactions, and procedural generation pipelines, using mock architectures to isolate components without requiring a live game instance.
-* **Developer Note:** Active development since August 2024 — the git history reflects two years of continuous architectural improvement. Newer systems (enemy AI, lighting, tiles, effects) represent my current design thinking; older systems (inventory, weapons) are due for refactoring and show where the project started.
 
 ---
 ### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)**: *C#, ASP.NET Core, EF Core, SQLite, TypeScript, Next.js*
