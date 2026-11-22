@@ -27,26 +27,28 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 * **Automated Testing:** Backed by a pytest suite covering core engine systems including AI pathfinding, tilemap spatial queries, raycasting, status effect interactions, and procedural generation pipelines, using mock architectures to isolate components without requiring a live game instance.
 
 ---
-### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)**: *C#, ASP.NET Core, EF Core, SQLite, TypeScript, Next.js*
+### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)** — *C#, ASP.NET Core, EF Core, SQLite, TypeScript, Next.js*
 <img src="data/bookstore.png" alt="Booky product page" height="400" />
 
-A full-stack online bookstore with a custom **ASP.NET Core Web API** backend, migrated from a Next.js/Prisma implementation while keeping the existing frontend working throughout.
+A full-stack online bookstore with a custom **ASP.NET Core Web API**, migrated from a Next.js/Prisma backend one endpoint at a time while the live frontend kept working.
 
-* **Architecture:** Layered .NET Web API (controllers, services, EF Core) behind a Next.js frontend. Session checks stay in Next.js, and the API accepts only requests carrying a shared service key.
-* **Core Features:** Accounts with Google sign-in, Stripe payments (test mode), password-reset and order-history emails, product reviews, and an admin area for managing products, users and orders.
-* **Security:** Purchase-verified download tokens that expire after 24 hours and stream the file without exposing storage URLs, bcrypt password hashing, Zod validation and Upstash rate limiting.
-* **Delivery:** Frontend on Vercel, with tests and a GitHub Actions pipeline.
+* **Incremental Migration:** Ported orders, users, products, reviews, password reset and downloads to .NET behind unchanged frontend contracts. Next.js route handlers became thin proxies, so each endpoint could be switched over and verified on its own.
+* **Layered API Design:** Controllers, services and EF Core entities with explicit DTOs. Public product shapes exclude storage paths, so paid file URLs never reach the browser.
+* **Service-to-Service Trust:** Next.js verifies the NextAuth session and forwards the user's identity, while the API accepts only requests that carry a shared key, checked in middleware with a constant-time comparison. Every missing or empty key fails closed.
+* **Protected Downloads:** Purchase-verified tokens that expire after 24 hours, issued only if the user has an order for that product. The API streams the file from storage, so the real URL is never exposed and large files aren't buffered in memory.
+* **Data Compatibility:** Mapped EF Core onto the existing Prisma schema conventions (string IDs, cascade and restrict rules, `@updatedAt` behavior). Existing bcrypt hashes verify unchanged in .NET, so current accounts keep working.
+* **Integrity & Edge Cases:** Unique indexes backed by duplicate-signup handling for race conditions, consistent email normalization, and password-reset responses that don't reveal which tokens exist.
 
 ---
 ### 📈 **[Stock Analysis Tool](https://github.com/RasmusLC1/stock_analysis)** — *Python, TypeScript, React, Vite, SQLite*
 <img width="50%" height="1549" alt="billede" src="https://github.com/user-attachments/assets/aef173c4-99c6-4a5f-983a-65b5e959fcfa" /><img width="50%" height="1549" alt="billede" src="https://github.com/user-attachments/assets/7fb86cb1-92ef-4b47-af2b-6b7c5edff2a3" />
 
 Full-stack investment screening and backtesting application that scores companies (~200+ tickers) across fundamental dimensions from financial data to surface compounders and filter out cyclical value traps.
-- **Architecture:** React/TypeScript (Vite) frontend paired with a Python REST backend, separating data retrieval, SQLite caching, metric calculations, and multi-lens scoring into modular components.
-- **Multi-Lens Scoring:** Evaluates companies across thematic lenses (**Growth, Quality, Health, Value, GARP, and Scale Disruptor**) using normalized financial data to produce a weighted 0–100 composite score.
-- **Capital-Intensive Calibration:** Adjusts financial health scaling—such as cash buffer thresholds—to account for capital-intensive business models without issuing false penalties.
-- **SQLite Caching & Performance:** Uses a local SQLite database (`stock_summaries.db`) to cache fetched financial summaries, reducing redundant external API calls and speeding up repeated screening and backtest runs.
-- **Testing & Backtesting:** Backed by unit-tested scoring logic and backtesting scripts that correlate historical scores with subsequent performance, compute multi-year CAGR metrics, and export portfolio valuations to CSV.
+* **Architecture:** React/TypeScript (Vite) frontend paired with a Python REST backend, separating data retrieval, SQLite caching, metric calculations, and multi-lens scoring into modular components.
+* **Multi-Lens Scoring:** Evaluates companies across thematic lenses (**Growth, Quality, Health, Value, GARP, and Scale Disruptor**) using normalized financial data to produce a weighted 0–100 composite score.
+* **Capital-Intensive Calibration:** Adjusts financial health scaling—such as cash buffer thresholds—to account for capital-intensive business models without issuing false penalties.
+* **SQLite Caching & Performance:** Uses a local SQLite database (`stock_summaries.db`) to cache fetched financial summaries, reducing redundant external API calls and speeding up repeated screening and backtest runs.
+* **Testing & Backtesting:** Backed by unit-tested scoring logic and backtesting scripts that correlate historical scores with subsequent performance, compute multi-year CAGR metrics, and export portfolio valuations to CSV.
 
 ---
 ### 🏝️ **[Procedural Town Simulator (Towns-End)](https://github.com/RasmusLC1/townsend/)** — *Godot 4, C#*
