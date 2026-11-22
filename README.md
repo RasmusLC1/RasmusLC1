@@ -1,11 +1,11 @@
-# Rasmus Ladefoged — Software Developer from Copenhagen, Denmark
+# Rasmus Ladefoged: Software Developer in Copenhagen
 
-I am a Software Developer with a Computer Science degree from Copenhagen University, a year of commercial development experience at Netcompany, and 5 years of professional enterprise IT experience in Ireland, where I worked with:
-* **QA testing** for Google
-* **Systems infrastructure** for Microsoft
-* **Enterprise support** for Apple
+I'm a backend-focused developer with a B.Sc. in Computer Science from Copenhagen University, working as a consultant at Netcompany. I like building complete systems and understanding how they work underneath: a .NET web API for a bookstore, a 2D game engine written from scratch, and a stock screener that scores companies from financial data are some of my main projects.
 
-I thrive on solving complex architectural problems, optimizing performance, and building clean, maintainable systems. Currently, my engineering focus is split between modern full-stack web architectures and performance-critical systems development.
+Before development I spent several years in IT support and QA for Microsoft, Google and Apple in Ireland.
+
+📫 [LinkedIn](https://linkedin.com/in/rcarlsen853/) · [Email](mailto:rasmus.lc3@gmail.com)
+
 
 ### 🚀 Current Focus Areas
 
@@ -15,7 +15,6 @@ I thrive on solving complex architectural problems, optimizing performance, and 
 Below are some of my notable projects, followed by the toolset I use to build them.
 
 ---
-
 ### ⚔️ **[Custom 2D Dungeon Crawler Engine (Kobold Clash)](https://github.com/RasmusLC1/Kobold_Clash/)** — *Python, Pygame*
 <img src="data/kobold.gif" alt="Kobold Clash" width="50%" />
 
@@ -27,6 +26,17 @@ A custom-built game engine powering a procedurally generated 2D world with real-
 * **Raycasting & Lighting:** Implements a 360° raycasting system for fog-of-war exploration with additive per-source tile lighting, pre-computed ray vectors, and cached tile surfaces to minimise redraws.
 * **Automated Testing:** Backed by a pytest suite covering core engine systems including AI pathfinding, tilemap spatial queries, raycasting, status effect interactions, and procedural generation pipelines, using mock architectures to isolate components without requiring a live game instance.
 * **Developer Note:** Active development since August 2024 — the git history reflects two years of continuous architectural improvement. Newer systems (enemy AI, lighting, tiles, effects) represent my current design thinking; older systems (inventory, weapons) are due for refactoring and show where the project started.
+
+---
+### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)**: *C#, ASP.NET Core, EF Core, SQLite, TypeScript, Next.js*
+<img src="data/bookstore.png" alt="Booky product page" height="250" />
+
+A full-stack online bookstore with a custom **ASP.NET Core Web API** backend, migrated from a Next.js/Prisma implementation while keeping the existing frontend working throughout.
+
+* **Architecture:** Layered .NET Web API (controllers, services, EF Core) behind a Next.js frontend. Session checks stay in Next.js, and the API accepts only requests carrying a shared service key.
+* **Core Features:** Accounts with Google sign-in, Stripe payments (test mode), password-reset and order-history emails, product reviews, and an admin area for managing products, users and orders.
+* **Security:** Purchase-verified download tokens that expire after 24 hours and stream the file without exposing storage URLs, bcrypt password hashing, Zod validation and Upstash rate limiting.
+* **Delivery:** Frontend on Vercel, with tests and a GitHub Actions pipeline.
 
 ---
 ### 📈 **[Global Stock Screener & Quantitative Backtesting Engine](https://github.com/RasmusLC1/stock_analysis)** — *Python, Pandas, yfinance, SQLite*
@@ -53,18 +63,7 @@ A procedurally generated 3D island town-builder built on Godot's GridMap, combin
 * **Future Focus Areas:** The end goal is a town simulator in the vein of *Anno* and *RimWorld* — the project's primary focus going forward is systemic simulation and AI (needs, schedules, resource chains, emergent behavior) rather than further expansion of terrain generation.
 
 ---
-
-### 💻 **[Bookstore Webshop (Booky)](https://github.com/RasmusLC1/Booky)** — *Next.js, TypeScript, Supabase, Prisma*
-<img src="data/bookstore.png" alt="Booky product page" height="250" />
-
-A full-stack, self-publishing platform built to simulate a high-traffic e-commerce environment with an emphasis on security and administrative control.
-
-* **Core Features:** Complete user lifecycle management via Next-Auth, Stripe payment streams, and an isolated Admin Dashboard for automated platform moderation.
-* **Security & Resilience:** Implemented strict HTML sanitization to eliminate XSS risks, data validation via Zod, and secure media uploads using EdgeStore filters.
-* **Infrastructure:** Leveraging Supabase (PostgreSQL) via Prisma ORM for relational integrity, hosted and continuously deployed via Vercel.
-
----
-### 🧮 **[Bachelor Project: Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)** — *Algorithmic Optimization*
+### 🧮 **[Bachelor Project: Polynomial Multiplication](https://github.com/RasmusLC1/Polynomial-Multiplication)** — *Algorithmic Optimization in C*
 <img src="data/bachelor.png" alt="Bachelor Screenshot" height="250" />
 Academic research benchmarking five polynomial multiplication algorithms implemented from scratch in C using GMP for arbitrary-precision arithmetic.
 
@@ -83,18 +82,17 @@ Academic research benchmarking five polynomial multiplication algorithms impleme
 * **Architectural Takeaway:** The structural and scaling limitations encountered during this project directly influenced the decision to switch to a strict component-based architecture for *Kobold Clash*.
 
 ---
-
 ## 🧰 Languages and Tools
 
-<img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-<img align="left" alt="Next.js" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-<img align="left" alt="NodeJS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-<img align="left" alt="SQL" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-<img align="left" alt="C#" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-<img align="left" alt=".NET" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
-<img align="left" alt="C++" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-<img align="left" alt="Linux" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-<br />
+<p>
+  <img alt="C#" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+  <img alt=".NET" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+  <img alt="Java" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+  <img alt="TypeScript" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" />
+  <img alt="Python" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg" />
+  <img alt="C" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+  <img alt="React" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+  <img alt="Next.js" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+  <img alt="SQLite" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
+  <img alt="Git" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+</p>
